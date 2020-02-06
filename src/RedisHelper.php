@@ -116,9 +116,9 @@ class RedisHelper
      * @param $tableName 表名
      * @return mixed
      */
-    public static function hDel($tableName)
+    public function hDel($tableName)
     {
-        return static::_redis()->hdel($tableName);
+        return self::_redis()->hdel($tableName);
     }
 
     /**
