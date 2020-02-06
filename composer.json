@@ -1,6 +1,9 @@
 {
     "name": "lexiang/lexiang-cache",
     "description": "缓存数据 缓存预处理",
+    "license": "MIT",
+    "type": "library",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.2",
         "predis/predis": "^1.1"
@@ -10,5 +13,10 @@
             "name": "userzhangjinlong",
             "email": "825188432@qq.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "lexiang_cache\\": "src/"
+        }
+    }
 }
