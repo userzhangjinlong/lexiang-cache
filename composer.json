@@ -1,0 +1,14 @@
+{
+    "name": "lexiang/lexiang-cache",
+    "description": "缓存数据 缓存预处理",
+    "require": {
+        "php": ">=5.2",
+        "predis/predis": "^1.1"
+    },
+    "authors": [
+        {
+            "name": "userzhangjinlong",
+            "email": "825188432@qq.com"
+        }
+    ]
+}
