@@ -20,17 +20,25 @@ class RedisCache{
             static::$instance = new self();
         }
 
-        return static::$instance;
+        $temp =  static::$instance;
+
+        return $temp->connectRedis();
     }
 
     private function __construct()
+    {
+    }
+
+    /**
+     * @return Client
+     */
+    private function connectRedis()
     {
         $config = self::getConfig();
 
         $redis = new Client($config);
 
         return $redis;
-
     }
 
     /**
