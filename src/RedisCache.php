@@ -5,7 +5,7 @@
  * Date: 20-2-5
  * Time: 下午5:47
  */
-namespace Lexiang;
+namespace LexiangCache;
 
 use Predis\Client;
 
