@@ -1,4 +1,4 @@
-# 环境要求
+# 环境要求(适配laravel框架)
 php >= 7  
 composer  
 redis  
