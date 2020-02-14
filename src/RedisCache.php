@@ -50,7 +50,8 @@ class RedisCache{
 
         self::$config = [
             'host'  =>  ENV('REDIS_HOST') ?: '127.0.0.1',
-            'port'  =>  ENV('REDIS_PORT') ?: '6379'
+            'port'  =>  ENV('REDIS_PORT') ?: '6379',
+            'password' => ENV('REDIS_PASSWORD') ?: NULL
         ];
 
         return self::$config;
